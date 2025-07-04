@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TNEA 2025 College Predictor - Payment</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { color: #333; }
+    section { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>TNEA 2025 College Predictor</h1>
+  <section>
+    <h2>Welcome</h2>
+    <p>Predict engineering colleges for TNEA 2025 based on your community rank, government school rank, overall rank, district, and course. Supports government school students (7.5% quota) and private school students, covering all 433 TNEA colleges.</p>
+  </section>
+  <section>
+    <h2>Disclaimer</h2>
+    <p>Cut-offs are estimated based on 2025 trends and may vary from TNEA results. Admissions depend on official TNEA counselling (tneaonline.org). Payment grants tool access, not admission. Use as a guide.</p>
+  </section>
+  <section>
+    <h2>Unlock Predictor</h2>
+    <p>Pay securely to access the tool. Redirected post-payment.</p>
+    <form>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QnLrA4q7BF79xP" async></script>
+    </form>
+  </section>
+  <script>
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.event === 'payment.success') {
+        window.location.href = 'predictor.html';
+      }
+    });
+  </script>
+</body>
+</html>
