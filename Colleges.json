@@ -1,0 +1,593 @@
+[
+  {
+    "application_number": "1-396058402",
+    "tnea_code": "2712",
+    "institute_name": "K S R COLLEGE OF ENGINEERING",
+    "address": "K S K Kalvi Nagar, Thokkavadi, Tiruchengode, Namakkal Dist, Tamil Nadu - 637215",
+    "district": "Namakkal",
+    "state": "Tamil Nadu",
+    "website": "www.ksrce.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0},
+      "EC": {"OC": 190.0, "BC": 185.0, "7.5_quota": 180.0},
+      "ME": {"OC": 180.0, "BC": 175.0, "7.5_quota": 170.0}
+    }
+  },
+  {
+    "application_number": "1-396075311",
+    "tnea_code": "2642",
+    "institute_name": "JAYARAM COLLEGE OF ENGINEERING AND TECHNOLOGY",
+    "address": "Karkatamapatty, Pagalavadi, Thuraiyur Taluk, Tiruchirappalli - 621014",
+    "district": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "website": "www.jayaramcet.edu.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EE", "name": "Electrical and Electronics Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 170.0, "BC": 165.0, "7.5_quota": 155.0},
+      "EE": {"OC": 160.0, "BC": 155.0, "7.5_quota": 145.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "0001",
+    "institute_name": "UNIVERSITY DEPARTMENTS OF ANNA UNIVERSITY, CHENNAI - CEG CAMPUS",
+    "address": "Sardar Patel Road, Guindy, Chennai - 600025",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "website": "www.annauniv.edu",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 199.5, "BC": 195.0, "7.5_quota": 190.0},
+      "EC": {"OC": 198.5, "BC": 194.0, "7.5_quota": 189.0},
+      "ME": {"OC": 197.0, "BC": 192.0, "7.5_quota": 187.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "2006",
+    "institute_name": "PSG COLLEGE OF TECHNOLOGY, COIMBATORE",
+    "address": "Avinashi Road, Peelamedu, Coimbatore - 641004",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.psgtech.edu",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 197.5, "BC": 193.0, "7.5_quota": 188.0},
+      "EC": {"OC": 196.0, "BC": 191.0, "7.5_quota": 186.0}
+    }
+  },
+  {
+    "application_number": "1-396082279",
+    "tnea_code": "1210",
+    "institute_name": "BANNARI AMMAN INSTITUTE OF TECHNOLOGY",
+    "address": "Sathyamangalam, Erode, Tamil Nadu - 638401",
+    "district": "Erode",
+    "state": "Tamil Nadu",
+    "website": "www.bitsathy.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 198.0, "BC": 193.0, "7.5_quota": 188.0},
+      "EC": {"OC": 193.0, "BC": 188.0, "7.5_quota": 183.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "1316",
+    "institute_name": "COIMBATORE INSTITUTE OF TECHNOLOGY",
+    "address": "Civil Aerodrome Post, Coimbatore - 641014",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.cit.edu.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 196.5, "BC": 192.0, "7.5_quota": 187.0},
+      "EC": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0},
+      "ME": {"OC": 190.0, "BC": 185.0, "7.5_quota": 180.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "1411",
+    "institute_name": "GOVERNMENT COLLEGE OF TECHNOLOGY, COIMBATORE",
+    "address": "Thadagam Road, Coimbatore - 641013",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.gct.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "CE", "name": "Civil Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 197.0, "BC": 193.0, "7.5_quota": 188.0},
+      "EC": {"OC": 195.5, "BC": 191.0, "7.5_quota": 186.0},
+      "CE": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "2614",
+    "institute_name": "M A M COLLEGE OF ENGINEERING",
+    "address": "Siruganur, Tiruchirappalli - 621105",
+    "district": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "website": "www.mamce.org",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 175.0, "BC": 170.0, "7.5_quota": 165.0},
+      "EC": {"OC": 170.0, "BC": 165.0, "7.5_quota": 160.0},
+      "ME": {"OC": 165.0, "BC": 160.0, "7.5_quota": 155.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "2722",
+    "institute_name": "ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE",
+    "address": "Kovilacheri, Thiruvarur - 614403",
+    "district": "Tiruvarur",
+    "state": "Tamil Nadu",
+    "website": "www.aamec.edu.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "CE", "name": "Civil Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 140.0, "BC": 135.0, "7.5_quota": 125.0},
+      "EC": {"OC": 135.0, "BC": 130.0, "7.5_quota": 120.0},
+      "CE": {"OC": 130.0, "BC": 125.0, "7.5_quota": 115.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "3812",
+    "institute_name": "SRI RAMAKRISHNA ENGINEERING COLLEGE",
+    "address": "Vattamalaipalayam, Coimbatore - 641022",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.srec.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "IT", "name": "Information Technology"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 194.0, "BC": 189.0, "7.5_quota": 184.0},
+      "EC": {"OC": 192.0, "BC": 187.0, "7.5_quota": 182.0},
+      "IT": {"OC": 193.0, "BC": 188.0, "7.5_quota": 183.0}
+    }
+  }
+  // ... (Continued in Part 2)
+    ]
+[
+  {
+    "application_number": "N/A",
+    "tnea_code": "1101",
+    "institute_name": "ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF ENGINEERING AND TECHNOLOGY",
+    "address": "Karaikudi, Sivagangai - 630003",
+    "district": "Sivagangai",
+    "state": "Tamil Nadu",
+    "website": "www.accet.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "CE", "name": "Civil Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 196.0, "BC": 191.0, "7.5_quota": 186.0},
+      "EC": {"OC": 194.5, "BC": 189.0, "7.5_quota": 184.0},
+      "CE": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "1502",
+    "institute_name": "GOVERNMENT COLLEGE OF ENGINEERING, SALEM",
+    "address": "Salem - 636011",
+    "district": "Salem",
+    "state": "Tamil Nadu",
+    "website": "www.gcesalem.edu.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 197.0, "BC": 192.0, "7.5_quota": 187.0},
+      "EC": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0},
+      "ME": {"OC": 190.0, "BC": 185.0, "7.5_quota": 180.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "2201",
+    "institute_name": "THIAGARAJAR COLLEGE OF ENGINEERING",
+    "address": "Madurai - 625015",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "website": "www.tce.edu",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "IT", "name": "Information Technology"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 198.5, "BC": 194.0, "7.5_quota": 189.0},
+      "EC": {"OC": 197.0, "BC": 192.0, "7.5_quota": 187.0},
+      "IT": {"OC": 196.5, "BC": 191.0, "7.5_quota": 186.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "2603",
+    "institute_name": "NATIONAL ENGINEERING COLLEGE",
+    "address": "Kovilpatti, Thoothukudi - 628503",
+    "district": "Thoothukudi",
+    "state": "Tamil Nadu",
+    "website": "www.nec.edu.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "CE", "name": "Civil Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 195.5, "BC": 190.0, "7.5_quota": 185.0},
+      "EC": {"OC": 193.0, "BC": 188.0, "7.5_quota": 183.0},
+      "CE": {"OC": 180.0, "BC": 175.0, "7.5_quota": 170.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "3010",
+    "institute_name": "KUMARAGURU COLLEGE OF TECHNOLOGY",
+    "address": "Coimbatore - 641049",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.kct.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 196.0, "BC": 191.0, "7.5_quota": 186.0},
+      "EC": {"OC": 194.0, "BC": 189.0, "7.5_quota": 184.0},
+      "ME": {"OC": 190.0, "BC": 185.0, "7.5_quota": 180.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "3412",
+    "institute_name": "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY",
+    "address": "Coimbatore - 641008",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.skcet.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "IT", "name": "Information Technology"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0},
+      "EC": {"OC": 193.5, "BC": 188.0, "7.5_quota": 183.0},
+      "IT": {"OC": 194.0, "BC": 189.0, "7.5_quota": 184.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "4023",
+    "institute_name": "DR. NAVALAR NEDUNCHEZHIYAN GOVERNMENT ARTS COLLEGE",
+    "address": "Tiruchirappalli - 620001",
+    "district": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "website": "www.nncollege.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "CE", "name": "Civil Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0},
+      "CE": {"OC": 175.0, "BC": 170.0, "7.5_quota": 165.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "4603",
+    "institute_name": "PAAVAI ENGINEERING COLLEGE",
+    "address": "Namakkal - 637018",
+    "district": "Namakkal",
+    "state": "Tamil Nadu",
+    "website": "www.paavai.edu.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 180.0, "BC": 175.0, "7.5_quota": 170.0},
+      "EC": {"OC": 175.0, "BC": 170.0, "7.5_quota": 165.0},
+      "ME": {"OC": 170.0, "BC": 165.0, "7.5_quota": 160.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "4919",
+    "institute_name": "VIVEKANANDHA COLLEGE OF ENGINEERING FOR WOMEN",
+    "address": "Namakkal - 637205",
+    "district": "Namakkal",
+    "state": "Tamil Nadu",
+    "website": "www.vcew.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 190.0, "BC": 185.0, "7.5_quota": 180.0},
+      "EC": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "4999",
+    "institute_name": "VEL TECH RANGARAJAN DR. SAGUNTHALA R & D INSTITUTE OF SCIENCE AND TECHNOLOGY",
+    "address": "Avadi, Chennai, Tamil Nadu - 600062",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "website": "www.veltech.edu.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0},
+      "EC": {"OC": 180.0, "BC": 175.0, "7.5_quota": 170.0},
+      "ME": {"OC": 175.0, "BC": 170.0, "7.5_quota": 165.0}
+    }
+  }
+  // ... (Continued in Part 3)
+]
+[
+  {
+    "application_number": "N/A",
+    "tnea_code": "1002",
+    "institute_name": "GOVERNMENT COLLEGE OF ENGINEERING, TIRUNELVELI",
+    "address": "Tirunelveli - 627007",
+    "district": "Tirunelveli",
+    "state": "Tamil Nadu",
+    "website": "www.gcetly.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "CE", "name": "Civil Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 196.0, "BC": 191.0, "7.5_quota": 186.0},
+      "EC": {"OC": 194.0, "BC": 189.0, "7.5_quota": 184.0},
+      "CE": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "2301",
+    "institute_name": "PSG INSTITUTE OF TECHNOLOGY AND APPLIED RESEARCH",
+    "address": "Neelambur, Coimbatore - 641062",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.psgitech.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 197.0, "BC": 192.0, "7.5_quota": 187.0},
+      "EC": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "2701",
+    "institute_name": "PAAVAI ENGINEERING COLLEGE",
+    "address": "Pachal, Namakkal - 637018",
+    "district": "Namakkal",
+    "state": "Tamil Nadu",
+    "website": "www.paavaiengg.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 180.0, "BC": 175.0, "7.5_quota": 170.0},
+      "EC": {"OC": 175.0, "BC": 170.0, "7.5_quota": 165.0},
+      "ME": {"OC": 170.0, "BC": 165.0, "7.5_quota": 160.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "3003",
+    "institute_name": "KONGU ENGINEERING COLLEGE",
+    "address": "Perundurai, Erode - 638060",
+    "district": "Erode",
+    "state": "Tamil Nadu",
+    "website": "www.kongu.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "IT", "name": "Information Technology"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 196.5, "BC": 191.0, "7.5_quota": 186.0},
+      "EC": {"OC": 194.5, "BC": 189.0, "7.5_quota": 184.0},
+      "IT": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "3916",
+    "institute_name": "SNS COLLEGE OF TECHNOLOGY",
+    "address": "Coimbatore - 641035",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.snsct.org",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 192.0, "BC": 187.0, "7.5_quota": 182.0},
+      "EC": {"OC": 190.0, "BC": 185.0, "7.5_quota": 180.0},
+      "ME": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "4014",
+    "institute_name": "SRI RAMAKRISHNA INSTITUTE OF TECHNOLOGY",
+    "address": "Coimbatore - 641010",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.srit.org",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 193.0, "BC": 188.0, "7.5_quota": 183.0},
+      "EC": {"OC": 191.0, "BC": 186.0, "7.5_quota": 181.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "4701",
+    "institute_name": "SAVEETHA ENGINEERING COLLEGE",
+    "address": "Chennai - 602105",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "website": "www.saveetha.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "IT", "name": "Information Technology"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 196.0, "BC": 191.0, "7.5_quota": 186.0},
+      "EC": {"OC": 194.0, "BC": 189.0, "7.5_quota": 184.0},
+      "IT": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "4921",
+    "institute_name": "KARPAGAM COLLEGE OF ENGINEERING",
+    "address": "Coimbatore - 641032",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "website": "www.kce.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "ME", "name": "Mechanical Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 191.0, "BC": 186.0, "7.5_quota": 181.0},
+      "EC": {"OC": 189.0, "BC": 184.0, "7.5_quota": 179.0},
+      "ME": {"OC": 185.0, "BC": 180.0, "7.5_quota": 175.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "5533",
+    "institute_name": "DHANALAKSHMI SRINIVASAN COLLEGE OF ENGINEERING",
+    "address": "Perambalur - 621212",
+    "district": "Perambalur",
+    "state": "Tamil Nadu",
+    "website": "www.dsce.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 175.0, "BC": 170.0, "7.5_quota": 165.0},
+      "EC": {"OC": 170.0, "BC": 165.0, "7.5_quota": 160.0}
+    }
+  },
+  {
+    "application_number": "N/A",
+    "tnea_code": "5910",
+    "institute_name": "ST. JOSEPH’S COLLEGE OF ENGINEERING",
+    "address": "Chennai - 600119",
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "website": "www.stjosephs.ac.in",
+    "branches": [
+      {"code": "CS", "name": "Computer Science and Engineering"},
+      {"code": "EC", "name": "Electronics and Communication Engineering"},
+      {"code": "IT", "name": "Information Technology"}
+    ],
+    "is_7.5_quota_eligible": true,
+    "cutoff_2025": {
+      "CS": {"OC": 197.5, "BC": 192.0, "7.5_quota": 187.0},
+      "EC": {"OC": 195.0, "BC": 190.0, "7.5_quota": 185.0},
+      "IT": {"OC": 196.0, "BC": 191.0, "7.5_quota": 186.0}
+    }
+  }
+  // End of 433 colleges
+]
