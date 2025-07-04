@@ -1,143 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TNEA 2025 College Predictor - Tool</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1 { color: #333; }
-    form { max-width: 600px; margin-bottom: 20px; }
-    form label { display: block; margin: 10px 0; }
-    form input, form select { width: 100%; padding: 8px; box-sizing: border-box; }
-    form button { padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
-    form button:hover { background: #0056b3; }
-    #results div { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNEA 7.5% Predictor</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        select, input { width: 100%; padding: 8px; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
 </head>
 <body>
-  <h1>TNEA 2025 College Predictor</h1>
-  <form id="tnea-form">
-    <label>Community (e.g., OC, BC): <input id="community" type="text" required></label>
-    <label>Community Rank (0–200): <input id="community-rank" type="number" step="0.1" min="0" max="200" required></label>
-    <label>Govt School Community Rank: <input id="govt-community-rank" type="number" step="0.1" min="0" max="200"></label>
-    <label>Overall Rank: <input id="overall-rank" type="number" min="1" required></label>
-    <label>Govt School Rank: <input id="govt-rank" type="number" min="1"></label>
-    <label>Preferred District: 
-      <select id="district">
-        <option value="">Any</option>
-        <option value="Ariyalur">Ariyalur</option>
-        <option value="Chennai">Chennai</option>
-        <option value="Coimbatore">Coimbatore</option>
-        <option value="Cuddalore">Cuddalore</option>
-        <option value="Dharmapuri">Dharmapuri</option>
-        <option value="Dindigul">Dindigul</option>
-        <option value="Erode">Erode</option>
-        <option value="Kallakurichi">Kallakurichi</option>
-        <option value="Kancheepuram">Kancheepuram</option>
-        <option value="Karur">Karur</option>
-        <option value="Krishnagiri">Krishnagiri</option>
-        <option value="Madurai">Madurai</option>
-        <option value="Mayiladuthurai">Mayiladuthurai</option>
-        <option value="Nagapattinam">Nagapattinam</option>
-        <option value="Namakkal">Namakkal</option>
-        <option value="Nilgiris">Nilgiris</option>
-        <option value="Perambalur">Perambalur</option>
-        <option value="Pudukkottai">Pudukkottai</option>
-        <option value="Ramanathapuram">Ramanathapuram</option>
-        <option value="Ranipet">Ranipet</option>
-        <option value="Salem">Salem</option>
-        <option value="Sivagangai">Sivagangai</option>
-        <option value="Tenkasi">Tenkasi</option>
-        <option value="Thanjavur">Thanjavur</option>
-        <option value="Theni">Theni</option>
-        <option value="Thoothukudi">Thoothukudi</option>
-        <option value="Tiruchirappalli">Tiruchirappalli</option>
-        <option value="Tirunelveli">Tirunelveli</option>
-        <option value="Tirupathur">Tirupathur</option>
-        <option value="Tiruppur">Tiruppur</option>
-        <option value="Tiruvallur">Tiruvallur</option>
-        <option value="Tiruvannamalai">Tiruvannamalai</option>
-        <option value="Tiruvarur">Tiruvarur</option>
-        <option value="Vellore">Vellore</option>
-        <option value="Viluppuram">Viluppuram</option>
-        <option value="Virudhunagar">Virudhunagar</option>
-        <option value="Chengalpattu">Chengalpattu</option>
-        <option value="Kanyakumari">Kanyakumari</option>
-      </select>
-    </label>
-    <label>Preferred Course: 
-      <select id="course">
-        <option value="CS">Computer Science</option>
-        <option value="EC">Electronics and Communication</option>
-        <option value="ME">Mechanical</option>
-        <option value="EE">Electrical and Electronics</option>
-        <option value="IT">Information Technology</option>
-        <option value="CE">Civil</option>
-        <option value="BT">Biotechnology</option>
-      </select>
-    </label>
-    <label><input id="is-govt-school" type="checkbox"> Government School Student (7.5% Quota)</label>
-    <button type="submit">Predict Colleges</button>
-  </form>
-  <div id="results"></div>
-  <script>
-    async function loadColleges() {
-      try {
-        const response = await fetch('colleges.json');
-        if (!response.ok) throw new Error('Failed to load colleges.json');
-        return await response.json();
-      } catch (error) {
-        console.error(error);
-        document.getElementById('results').innerHTML = '<p>Error loading college data. Please try again later.</p>';
-        return [];
-      }
-    }
-
-    function predictColleges(inputs) {
-      const { communityRank, govtSchoolCommunityRank, overallRank, govtSchoolRank, preferredDistrict, preferredCourse, isGovtSchool, community } = inputs;
-      loadColleges().then(colleges => {
-        const filteredColleges = colleges.filter(college => {
-          if (preferredDistrict && college.district.toLowerCase() !== preferredDistrict.toLowerCase()) return false;
-          if (!college.branches.some(branch => branch.code === preferredCourse)) return false;
-
-          if (isGovtSchool && college.is_7.5_quota_eligible) {
-            const cutoff = college.cutoff_2025[preferredCourse]?.["7.5_quota"];
-            return cutoff && (govtSchoolCommunityRank <= cutoff || govtSchoolRank <= cutoff);
-          }
-
-          const cutoff = college.cutoff_2025[preferredCourse]?.[community?.toUpperCase() || "OC"];
-          return cutoff && (communityRank <= cutoff || overallRank <= cutoff);
+    <h2>TNEA 7.5% Predictor</h2>
+    <form id="predictForm">
+        <div class="form-group">
+            <label for="community">Community:</label>
+            <select id="community" name="community">
+                <option value="OC">OC</option>
+                <option value="BC">BC</option>
+                <option value="7.5_quota">7.5% Quota</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="rank">Community Rank:</label>
+            <input type="number" id="rank" name="rank" min="1" required>
+        </div>
+        <div class="form-group">
+            <label for="district">District:</label>
+            <select id="district" name="district">
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <!-- Add all 38 districts from colleges.json -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="CS">Computer Science</option>
+                <option value="EC">Electronics</option>
+                <!-- Add other branches from colleges.json -->
+            </select>
+        </div>
+        <button type="submit">Predict</button>
+    </form>
+    <table id="results" style="display:none;">
+        <thead>
+            <tr><th>College</th><th>Cut-off</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        document.getElementById('predictForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const community = document.getElementById('community').value;
+            const rank = document.getElementById('rank').value;
+            const district = document.getElementById('district').value;
+            const course = document.getElementById('course').value;
+            fetch('/colleges.json')
+                .then(response => response.json())
+                .then(data => {
+                    const results = data.filter(college => 
+                        college.district === district && 
+                        college.cutoff_2025[course] && 
+                        college.cutoff_2025[course][community] <= rank
+                    ).sort((a, b) => 
+                        b.cutoff_2025[course][community] - a.cutoff_2025[course][community]
+                    ).slice(0, 10); // Top 10 colleges
+                    const tbody = document.querySelector('#results tbody');
+                    tbody.innerHTML = '';
+                    results.forEach(college => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `<td>${college.institute_name}</td><td>${college.cutoff_2025[course][community]}</td>`;
+                        tbody.appendChild(row);
+                    });
+                    document.getElementById('results').style.display = 'table';
+                });
         });
-
-        const resultsDiv = document.getElementById('results');
-        resultsDiv.innerHTML = filteredColleges.length ? filteredColleges.map(college => `
-          <div>
-            <h3>${college.institute_name}</h3>
-            <p>TNEA Code: ${college.tnea_code}</p>
-            <p>Address: ${college.address}</p>
-            <p>District: ${college.district}</p>
-            <p>Website: <a href="${college.website}" target="_blank">${college.website}</a></p>
-            <p>Branch: ${college.branches.find(b => b.code === preferredCourse)?.name || preferredCourse}</p>
-            <p>Cut-Off (2025): ${isGovtSchool ? college.cutoff_2025[preferredCourse]["7.5_quota"] : college.cutoff_2025[preferredCourse][community?.toUpperCase() || "OC"]}</p>
-          </div>
-        `).join('') : '<p>No colleges match your criteria. Try adjusting your inputs.</p>';
-      });
-    }
-
-    document.getElementById('tnea-form').addEventListener('submit', e => {
-      e.preventDefault();
-      const inputs = {
-        community: document.getElementById('community').value,
-        communityRank: parseFloat(document.getElementById('community-rank').value),
-        govtSchoolCommunityRank: parseFloat(document.getElementById('govt-community-rank').value) || 0,
-        overallRank: parseFloat(document.getElementById('overall-rank').value),
-        govtSchoolRank: parseFloat(document.getElementById('govt-rank').value) || 0,
-        preferredDistrict: document.getElementById('district').value,
-        preferredCourse: document.getElementById('course').value,
-        isGovtSchool: document.getElementById('is-govt-school').checked
-      };
-      predictColleges(inputs);
-    });
-  </script>
+    </script>
 </body>
 </html>
