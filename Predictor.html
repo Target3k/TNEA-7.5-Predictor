@@ -1,86 +1,146 @@
+<!-- predictor.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNEA 7.5% Predictor</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; }
-        select, input { width: 100%; padding: 8px; }
-        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Plan - TNEA Predictor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    h2 { color: #333; text-align: center; margin-top: 20px; }
+    form { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; max-width: 
+
+600px; margin: 20px auto; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    select, input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #27ae60; color: white; padding: 10px 15px; border: none; border-radius: 5px; 
+
+cursor: pointer; width: 100%; font-size: 16px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; border-radius: 10px; 
+
+overflow: hidden; }
+    th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+    th { background-color: #f0f0f0; }
+    .footer-note { margin-top: 30px; font-size: 12px; color: gray; text-align: center; padding: 10px; }
+  </style>
 </head>
 <body>
-    <h2>TNEA 7.5% Predictor</h2>
-    <form id="predictForm">
-        <div class="form-group">
-            <label for="community">Community:</label>
-            <select id="community" name="community">
-                <option value="OC">OC</option>
-                <option value="BC">BC</option>
-                <option value="7.5_quota">7.5% Quota</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="rank">Community Rank:</label>
-            <input type="number" id="rank" name="rank" min="1" required>
-        </div>
-        <div class="form-group">
-            <label for="district">District:</label>
-            <select id="district" name="district">
-                <option value="Chennai">Chennai</option>
-                <option value="Coimbatore">Coimbatore</option>
-                <!-- Add all 38 districts from colleges.json -->
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="course">Course:</label>
-            <select id="course" name="course">
-                <option value="CS">Computer Science</option>
-                <option value="EC">Electronics</option>
-                <!-- Add other branches from colleges.json -->
-            </select>
-        </div>
-        <button type="submit">Predict</button>
-    </form>
-    <table id="results" style="display:none;">
-        <thead>
-            <tr><th>College</th><th>Cut-off</th></tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    <script>
-        document.getElementById('predictForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const community = document.getElementById('community').value;
-            const rank = document.getElementById('rank').value;
-            const district = document.getElementById('district').value;
-            const course = document.getElementById('course').value;
-            fetch('/colleges.json')
-                .then(response => response.json())
-                .then(data => {
-                    const results = data.filter(college => 
-                        college.district === district && 
-                        college.cutoff_2025[course] && 
-                        college.cutoff_2025[course][community] <= rank
-                    ).sort((a, b) => 
-                        b.cutoff_2025[course][community] - a.cutoff_2025[course][community]
-                    ).slice(0, 10); // Top 10 colleges
-                    const tbody = document.querySelector('#results tbody');
-                    tbody.innerHTML = '';
-                    results.forEach(college => {
-                        const row = document.createElement('tr');
-                        row.innerHTML = `<td>${college.institute_name}</td><td>${college.cutoff_2025[course][community]}</td>`;
-                        tbody.appendChild(row);
-                    });
-                    document.getElementById('results').style.display = 'table';
-                });
+  <header>🎯 Our Plan - TNEA 2025 Predictor Tool</header>
+
+  <h2>Enter Your Details Below</h2>
+
+  <form id="predictForm">
+    <div class="form-group">
+      <label for="rank">Your Cutoff Mark:</label>
+      <input type="number" id="rank" required min="1" max="200" />
+    </div>
+    <div class="form-group">
+      <label for="community">Community:</label>
+      <select id="community">
+        <option value="OC">OC</option>
+        <option value="BC">BC</option>
+        <option value="MBC">MBC</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="quota">Quota:</label>
+      <select id="quota">
+        <option value="general">General Counselling</option>
+        <option value="7.5_quota">7.5% Govt School Quota</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="district">Preferred District (Optional):</label>
+      <input type="text" id="district" placeholder="e.g., Coimbatore" />
+    </div>
+    <div class="form-group">
+      <label for="branch">Preferred Branch (Optional):</label>
+      <input type="text" id="branch" placeholder="e.g., CS, EC, ME" />
+    </div>
+    <button type="submit">Predict Eligible Colleges</button>
+  </form>
+
+  <table id="results" style="display:none">
+    <thead>
+      <tr><th>College Name</th><th>Branch</th><th>District</th><th>Cutoff</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="footer-note">Predictions are based on previous year cutoffs. Refer official TNEA site for 
+
+confirmation.</div>
+
+  <footer>
+    &copy; 2025 Our Plan | Built for 7.5% Govt School Quota + General | Powered by Target ₹3K
+  </footer>
+
+  <script>
+    if (!location.search.includes("access=true")) {
+      alert("Access Denied. Please pay ₹25 to use this tool.");
+      window.location.href = "index.html";
+    }
+
+    document.getElementById('predictForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const rank = parseFloat(document.getElementById('rank').value);
+      const community = document.getElementById('community').value;
+      const quota = document.getElementById('quota').value;
+      const district = document.getElementById('district').value.toLowerCase();
+      const branch = document.getElementById('branch').value.toUpperCase();
+
+      fetch('colleges.json')
+        .then(res => res.json())
+        .then(data => {
+          const tbody = document.querySelector("#results tbody");
+          tbody.innerHTML = "";
+          let count = 0;
+
+          data.forEach(college => {
+            const eligibleBranches = college.branches || [];
+
+            eligibleBranches.forEach(b => {
+              const code = b.code;
+              const cutoff = college.cutoff_2025?.[code]?.[quota === '7.5_quota' ? '7.5_quota' : community];
+
+              if (
+                cutoff !== undefined &&
+                rank >= cutoff &&
+                (district === '' || college.district.toLowerCase() === district) &&
+                (branch === '' || code === branch)
+              ) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${college.institute_name}</td><td>${code}</td><td>${college.district}
+
+</td><td>${cutoff}</td>`;
+                tbody.appendChild(tr);
+                count++;
+              }
+            });
+          });
+
+          if (count > 0) {
+            document.getElementById("results").style.display = "table";
+          } else {
+            alert("No matching colleges found. Try different inputs.");
+            document.getElementById("results").style.display = "none";
+          }
+        })
+        .catch(err => {
+          alert("Error loading data. Try again later.");
+          console.error(err);
         });
-    </script>
+    });
+  </script>
 </body>
 </html>
