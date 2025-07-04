@@ -1,35 +1,99 @@
+<!-- Updated index.html with header, footer, disclaimer, and purpose -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TNEA 2025 College Predictor - Payment</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎯 Our Plan - Unlock TNEA Predictor</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1, h2 { color: #333; }
-    section { margin-bottom: 20px; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e6f0ff, #ffffff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #444;
+      margin: 10px 0;
+    }
+    .reason {
+      background: #fef7e0;
+      border-left: 5px solid #f1c40f;
+      padding: 10px;
+      font-size: 0.95em;
+      margin-bottom: 20px;
+    }
+    .pay-button {
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-  <h1>TNEA 2025 College Predictor</h1>
-  <section>
-    <h2>Welcome</h2>
-    <p>Predict engineering colleges for TNEA 2025 based on your community rank, government school rank, overall rank, district, and course. Supports government school students (7.5% quota) and private school students, covering all 433 TNEA colleges.</p>
-  </section>
-  <section>
-    <h2>Disclaimer</h2>
-    <p>Cut-offs are estimated based on 2025 trends and may vary from TNEA results. Admissions depend on official TNEA counselling (tneaonline.org). Payment grants tool access, not admission. Use as a guide.</p>
-  </section>
-  <section>
-    <h2>Unlock Predictor</h2>
-    <p>Pay securely to access the tool. Redirected post-payment.</p>
-    <form>
-      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QnLrA4q7BF79xP" async></script>
-    </form>
-  </section>
+  <header>🎯 Our Plan - TNEA 2025 Predictor</header>
+
+  <main>
+    <div class="card">
+      <h1>Unlock Predictor Access</h1>
+      <p><strong>Pay ₹25 to Access Full Prediction Tool</strong></p>
+      <div class="reason">
+        This small fee helps maintain the tool and support data updates. You’ll get access to the full TNEA predictor including 7.5% govt quota & general quota with all eligible colleges listed.
+      </div>
+      <div class="pay-button">
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                  data-payment_button_id="pl_QnLrA4q7BF79xP"
+                  async></script>
+        </form>
+      </div>
+      <p class="disclaimer">Once payment is successful, you will be redirected to the predictor. Use this as a guidance tool only; data is based on previous year trends.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Our Plan | Powered by Target ₹3K | TNEA Predictor Tool
+  </footer>
+
   <script>
     window.addEventListener('message', function(e) {
       if (e.data && e.data.event === 'payment.success') {
-        window.location.href = 'predictor.html';
+        window.location.href = 'predictor.html?access=true';
       }
     });
   </script>
